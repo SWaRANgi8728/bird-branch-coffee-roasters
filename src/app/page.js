@@ -170,7 +170,7 @@ export default function Home() {
 {/* About Us Section */}
 <section
   id="about"
-  className="max-w-8xl mx-auto px-6 py-20 rounded-lg shadow-lg scroll-mt-20"
+  className="max-w-8xl mx-auto px-6 py-20 bg-white rounded-lg shadow-lg scroll-mt-20"
 >
   {/* Centered Heading */}
   <div className="text-center mb-9">
