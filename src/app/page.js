@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import { useState, useEffect } from "react";
 import { Menu, X, User, ShoppingCart, Coffee, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin  } from "lucide-react";
 import { FaCoffee } from 'react-icons/fa';
@@ -187,8 +187,10 @@ export default function Home() {
   <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
     {/* Image */}
     <div className="group md:w-1/2 w-full flex justify-center">
-      <img
+      <Image
         src="/img.jpeg"
+        width={100}
+        height={100}
         alt="Coffee Roasting Process"
         className="w-full max-w-md md:max-w-lg h-96 rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl"
       />
@@ -259,8 +261,10 @@ export default function Home() {
     {/* Coffee Card 1 */}
     <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="w-full h-50 overflow-hidden">
-        <img
+        <Image
           src="/img2.png"
+          width={100}
+          height={100}
           alt="Espresso"
           className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
         />
@@ -279,8 +283,10 @@ export default function Home() {
     {/* Coffee Card 2 */}
     <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="w-full h-50 overflow-hidden">
-        <img
+        <Image
           src="/img3.jpeg"
+          width={100}
+          height={100}
           alt="redsatrt Roast"
           className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
         />
@@ -299,8 +305,10 @@ export default function Home() {
     {/* Coffee Card 3 */}
     <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="w-full h-50 overflow-hidden">
-        <img
+        <Image
           src="/img4.jpg"
+          width={100}
+          height={100}
           alt="Colombian Gold"
           className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
         />
@@ -319,8 +327,10 @@ export default function Home() {
     {/* Coffee Card 4 */}
     <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="w-full h-50 overflow-hidden">
-        <img
+        <Image
           src="/img5.png"
+          width={100}
+          height={100}
           alt="Kenyan Peaberry"
           className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
         />
@@ -341,23 +351,25 @@ export default function Home() {
 {/* Brew Guide Section */}
 <section
   id="brew-guide"
-  className="max-w-8xl mx-auto px-6 py-10 bg-white rounded-lg shadow-lg scroll-mt-20"
+  className="max-w-8xl mx-auto px-5 py-10 bg-white rounded-lg shadow-lg scroll-mt-20"
 >
   {/* Centered Heading */}
   <div className="text-center mb-10">
     <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4" style={{ fontFamily: '"Times New Roman", Times, serif' }}>Brew Guide</h2>
     
     <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-  Discover the art of brewing coffee with Brewlia's expert tips and simple guides. Let's elevate your coffee journey together, one cup at a time.
-</p>
-</div>
+         Discover the art of brewing coffee with Brewlia&apos;s expert tips and simple guides. Let&apos;s elevate your coffee journey together, one cup at a time.
+    </p>
+  </div>
 
   {/* Cards Grid */}
   <div className="flex flex-wrap justify-center gap-8 mb-6">
     {/* Card 1 */}
     <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 w-148 h-100">
-      <img
+      <Image
         src="/img9.jpg"
+        width={148}
+        height={100}
         alt="French Press"
         className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
       />
@@ -368,8 +380,10 @@ export default function Home() {
 
     {/* Card 2 */}
     <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 w-148 h-100">
-      <img
+      <Image
         src="/img6.png"
+        width={148}
+        height={100}
         alt="cold brew"
         className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
       />
@@ -382,8 +396,10 @@ export default function Home() {
   {/* Second Row with One Card */}
   <div className="flex flex-wrap justify-center gap-8 mb-6">
     <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 w-148 h-100">
-      <img
+      <Image
         src="/img7.jpg"
+        width={148}
+        height={100}
         alt="aeropress"
         className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
       />
@@ -394,8 +410,10 @@ export default function Home() {
 
     {/* Card 2 */}
     <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 w-148 h-100">
-      <img
+      <Image
         src="/img8.jpg"
+        width={148}
+        height={200}
         alt="Pour Over"
         className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
       />
@@ -595,6 +613,12 @@ export default function Home() {
  </>
   );
 }
+
+
+
+
+
+
 
 
 
